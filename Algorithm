@@ -1,0 +1,48 @@
+Import the random module to use random.randint.
+Define function get_rolls():
+a. Print: "How many pairs of dice would you like to roll?"
+b. Start a loop that keeps running forever (while True).
+c. Get input from user and store in answer.
+d. If answer contains only digits (use .isdigit()):
+
+Convert answer to integer and store in num.
+If num > 0:
+
+Return num (exit the function).
+
+
+Else:
+
+Print: "Please enter a number bigger than 0."
+e. Else (not digits):
+
+
+Print: "That's not a whole number. Try again."
+
+
+Define function roll_one_die():
+a. Return random.randint(1, 6)
+Define function main():
+a. Call get_rolls() and store result in num_rolls.
+b. Print a blank line, then:
+"Rolling X pair(s) of dice..." (X = num_rolls)
+followed by another blank line.
+c. Create list counts = [0] * 11
+(11 zeros: index 0 for sum 2, index 1 for sum 3, ..., index 10 for sum 12)
+d. Loop num_rolls times (use range(num_rolls)):
+
+Call get_rolls() → store in num_roll
+Code will then display "Rolling [num_rolls] pairs of dice"
+Then create a counts list with 13 numbers/elements(where 0,1 will not be used)
+For roll from the user (1 to num_rolls)
+die1 = random.randint(1, 6)
+die2 = random.randint(1, 6)
+Your total rolls will equal die1+die2
+Then increment counts[total] by 1 or +=1
+Next, Show the full counts list.
+And for each total rolls from 2, 12
+we will write function that sets stars = "*" times count[total]
+Then finally we write a print statement to display the sum of the total stars for each sum.
+
+
+Call main() to start the program.
